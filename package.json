@@ -6,13 +6,19 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "axios": "^0.19.2",
+    "chart.js": "^2.9.3",
     "react": "^16.13.1",
+    "react-chartjs-2": "^2.9.0",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1"
+    "react-hot-loader": "^4.12.21",
+    "react-scripts": "3.4.1",
+    "recharts": "^1.8.5"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "deploy": "aws s3 sync build/ s3://serverless-markets-app --acl public-read",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
